@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: #CCCCCC;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background: #469050;
+}
+
+@font-face {
+    font-family: "Gurajada-Regular";
+    src: local("Gurajada-Regular"), url('./fonts/Gurajada-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Suravaram-Regular";
+    src: local("Suravaram-Regular"), url('./fonts/Suravaram-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "LeagueSpartan-Regular";
+    src: local("LeagueSpartan-Regular"), url('./fonts/LeagueSpartan-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "LeagueSpartan-SemiBold";
+    src: local("LeagueSpartan-SemiBold"), url('./fonts/LeagueSpartan-SemiBold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TenaliRamakrishna-Regular";
+    src: local("TenaliRamakrishna-Regular"), url('./fonts/TenaliRamakrishna-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "LeagueSpartan-Medium";
+    src: local("LeagueSpartan-Medium"), url('./fonts/LeagueSpartan-Medium.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "LeagueSpartan-Light";
+    src: local("LeagueSpartan-Light"), url('./fonts/LeagueSpartan-Light.ttf') format("truetype");
+}
