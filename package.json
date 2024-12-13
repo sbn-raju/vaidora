@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
+    "swagger":"node src/docs/swagger.js",
     "build": "babel src --out-dir dist"
   },
   "repository": {
@@ -29,10 +30,13 @@
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.11.5",
     "razorpay": "^2.9.4",
+    "swagger-ui": "^5.18.2",
+    "swagger-ui-express": "^5.0.1",
     "twilio": "^5.1.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "swagger-autogen": "^2.23.7"
   }
 }

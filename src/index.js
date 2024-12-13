@@ -11,6 +11,8 @@ const { default: helmet, xssFilter } = require('helmet')
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./docs/swagger-output.json');
 
 
 //Middlewares 
@@ -63,6 +65,7 @@ const messageRoute = require("./routes/messages.routes.js");
 
 
 
+
 //Main routes
 app.use("/api/v1/login",authUserRoute)
 app.use("/api/v1/auth",authRoute);
@@ -76,7 +79,7 @@ app.use("/api/v1/appointment",appointmentRoute);
 app.use("/api/v1/admin/message",messageRoute);
 app.use("/api/v1/appointment/user",userAppointmentRoute);
 
-
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 app.use(errorMiddleware)
