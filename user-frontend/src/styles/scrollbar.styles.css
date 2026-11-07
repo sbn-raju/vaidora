@@ -1,0 +1,10 @@
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #469050 transparent;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.admin-scrollbar{
+    scrollbar-width: none;
+}
